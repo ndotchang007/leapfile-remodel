@@ -1198,12 +1198,341 @@ a:hover {
   opacity: 0.5;
 }
 
+/* Interior pages */
+.page-hero {
+  padding: 3.5rem 0 2.5rem;
+  background:
+    radial-gradient(ellipse 70% 60% at 80% 10%, var(--teal-glow), transparent),
+    linear-gradient(180deg, var(--teal-light) 0%, var(--bg) 100%);
+}
+
+.page-hero-inner {
+  max-width: 44rem;
+}
+
+.page-hero h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
+}
+
+.page-hero .page-lead {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.page-hero .hero-actions {
+  margin-top: 1.5rem;
+}
+
+.page-content {
+  padding: 3rem 0 4rem;
+}
+
+.page-content + .cta-section {
+  margin-top: 0;
+}
+
+.content-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.content-grid.two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info-card,
+.content-card,
+.contact-card {
+  padding: 1.75rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.info-card h3,
+.content-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+  color: var(--text-dark);
+}
+
+.info-card p,
+.content-card p {
+  margin: 0 0 0.75rem;
+  color: var(--text-muted);
+}
+
+.info-card p:last-child,
+.content-card p:last-child {
+  margin-bottom: 0;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.feature-tile {
+  padding: 1.5rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.feature-tile h4 {
+  margin: 0 0 0.5rem;
+  color: var(--text-dark);
+}
+
+.feature-tile p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.feature-tile ul {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.tour-section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.tour-section:last-child {
+  border-bottom: none;
+}
+
+.tour-section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+}
+
+.tour-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tour-list li {
+  position: relative;
+  padding-left: 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.tour-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+.faq-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.faq-item {
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.faq-item h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+}
+
+.faq-item p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.faq-item a {
+  font-weight: 600;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.team-card h3 {
+  margin: 0 0 0.25rem;
+  color: var(--text-dark);
+}
+
+.team-card .team-role {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--teal);
+}
+
+.team-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+.contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list li {
+  margin-bottom: 0.65rem;
+  color: var(--text-muted);
+}
+
+.contact-list strong {
+  color: var(--text-dark);
+}
+
+.contact-list a {
+  font-weight: 600;
+}
+
+.map-embed {
+  border: 0;
+  border-radius: var(--radius-lg);
+  width: 100%;
+  min-height: 280px;
+  box-shadow: var(--shadow);
+}
+
+.legal-content {
+  max-width: 52rem;
+}
+
+.legal-content h2 {
+  margin: 2rem 0 0.75rem;
+  font-size: 1.35rem;
+  color: var(--text-dark);
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content h3 {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+}
+
+.legal-content p,
+.legal-content li {
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.legal-content ul,
+.legal-content ol {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+
+.security-layer {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.security-layer:last-child {
+  border-bottom: none;
+}
+
+.security-layer h3 {
+  margin: 0 0 0.5rem;
+  color: var(--teal-darker);
+  font-size: 1.1rem;
+}
+
+.security-layer p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font: inherit;
+  color: var(--text);
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.inline-link-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin-top: 1rem;
+}
+
+.inline-link-list a {
+  font-weight: 600;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .hero-grid,
   .feature-row,
   .workflow-inner,
-  .security-grid {
+  .security-grid,
+  .content-grid.two-col,
+  .feature-grid {
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
@@ -1397,5 +1726,17 @@ a:hover {
 
   .hero h1 {
     font-size: 2rem;
+  }
+
+  .content-grid.two-col,
+  .feature-grid,
+  .team-grid,
+  .tour-list,
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .page-hero {
+    padding: 2.5rem 0 2rem;
   }
 }

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security | LeapFILE</title>
+  <meta name="description" content="LeapFILE security architecture: encryption, authentication, authorization, audit trails, and certified data centers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="promo-banner">
+    <a href="https://ai-sales.leapfile.com">Questions about how LeapFILE can help your business? <span>Our AI Sales Assistant has answers →</span></a>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="LeapFILE home"><img src="assets/logo.svg" alt="LeapFILE" width="160" height="48" /></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      <nav id="site-nav" class="site-nav">
+        <a href="tel:7573534750" class="nav-phone">Sales (757) 353-4750</a>
+        <a href="https://fileexchange.leapfile.net/app/login">Login</a>
+        <a href="support.html">Support</a>
+        <a href="https://fileexchange.leapfile.net/app/signup" class="btn btn-primary">Sign Up</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <span class="section-label">Security</span>
+        <h1>Security <span class="text-accent">information</span></h1>
+        <p class="page-lead">LeapFILE implements several layers of security to ensure confidentiality during the file transfer process. Each layer reinforces the others to protect data, authenticate users, enforce granular access, and produce a detailed audit trail.</p>
+      </div>
+    </section>
+    <section class="page-content">
+      <div class="container legal-content">
+        <h2>Protection layer</h2>
+        <p>The first layer of security protects data in custody from unauthorized access — the foundation for controlling access to information by blocking all access points.</p>
+
+        <div class="security-layer">
+          <h3>1. Physical access control</h3>
+          <p>Physical access to systems containing confidential files is controlled and monitored. The service is housed in state-of-the-art data centers featuring 24×7 guarded access facilities using video surveillance and advanced biometric access technologies.</p>
+        </div>
+        <div class="security-layer">
+          <h3>2. Network access control</h3>
+          <p>Network access to systems is highly restricted. Firewalls shield servers from the Internet, restricting access to HTTPS (443) ports only.</p>
+        </div>
+        <div class="security-layer">
+          <h3>3. Data encryption</h3>
+          <p>Data transmissions over any network are always encrypted. Files are uploaded and downloaded using SSL encryption. Data at rest is encrypted at the disk level using AES-256.</p>
+        </div>
+        <div class="security-layer">
+          <h3>4. Data retention</h3>
+          <p>The system enforces a strict data retention policy. Each file transfer contains an expiration date ranging from 1 to 14 days. Undownloaded files are permanently deleted at expiration. Successfully downloaded files are deleted after 8 hours. Users can cancel transfers and delete associated files at any time.</p>
+        </div>
+
+        <h2>Authentication layer</h2>
+        <p>Security measures validate user identity before granting access. There are two types of users: internal users with LeapFILE accounts and external users who exchange files with internal users.</p>
+
+        <div class="security-layer">
+          <h3>5. Internal user authentication</h3>
+          <p>Each internal user is assigned a unique ID and password. Passwords must be at least 8 characters with uppercase, lowercase, and a number. Passwords are encrypted to ensure integrity.</p>
+        </div>
+        <div class="security-layer">
+          <h3>6. External user / receiver authentication</h3>
+          <p>Each file transfer carries its own authentication requirements. To download, the receiver must provide a secure download link or tracking code, the matching receiver email address, and optionally an access code set by the sender.</p>
+        </div>
+
+        <h2>Authorization &amp; audit layers</h2>
+        <div class="security-layer">
+          <h3>7. Authorization layer</h3>
+          <p>Each user must authenticate to start a session every time they use the service. User credentials are compared against permissions for every request, enforcing access at the application level.</p>
+        </div>
+        <div class="security-layer">
+          <h3>8. Audit layer</h3>
+          <p>The audit layer records the time, IP address, and user name for every file download. This is compiled for every transfer and made available for tracking file custody. Senders receive an email alert when files are successfully downloaded.</p>
+        </div>
+
+        <p style="margin-top: 2rem;">Questions or additional information? Email <a href="mailto:info@leapfile.com">info@leapfile.com</a>.</p>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="container cta-inner">
+        <h2>Secure file delivery for your business</h2>
+        <p>Start your free trial and see LeapFILE security in action.</p>
+        <a href="https://fileexchange.leapfile.net/app/signup" class="btn btn-primary btn-lg">Sign Up</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/logo.svg" alt="LeapFILE" width="130" height="39" class="footer-logo" />
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="business.html">Workflow</a><a href="enterprise.html">Enterprise</a><a href="product-tour.html">Product Tour</a><a href="about.html">About Us</a><a href="support.html">Support</a><a href="termsofservice.html">Terms of Service</a><a href="security.html">Security</a><a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+      <a href="https://fileexchange.leapfile.net/app/signup" class="btn btn-primary">Sign Up</a>
+      <p class="footer-copy">&copy; LeapFILE. Simple and secure file delivery.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
